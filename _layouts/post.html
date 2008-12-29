@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class="post section">
+	<!-- <div class="post-header">
+			<h1><%= link_to_unless_current post.title, :action => 'show', :id => post %></h1>
+			<p class="date"><%=h post.created.strftime("%B %d %Y") %></p>
+		</div> -->
+	<div class="post-text">
+		{{ content }}
+	</div>
+</div>
