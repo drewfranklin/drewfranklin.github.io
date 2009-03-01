@@ -25,7 +25,7 @@ function output_feed_items(json) {
 }
 
 function make_feed_item(item, item_id) {
-	var formattedDate = dateFormat(item.pubDate, "longDate");
+	var formattedDate = dateFormat(item.pubDate, "mmmm d yyyy");
 	return '<span>' + formattedDate  + '</span>' +
 		'<h4 id="heading"><a href="' + item.link + '">' + item.title + '</a></h4>' + 
 		'<div class="item-info">' + item.description + '</div>';
