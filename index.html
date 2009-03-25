@@ -2,12 +2,15 @@
 layout: default
 title: Drew Franklin
 ---
-<div id="home">
-	<h1>Posts</h1>
-	<ul class="posts">
-		{% for post in site.posts %}
-		<li><span>{{ post.date | page.date | date: "%B %d, %Y"  }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-	</ul>
+<div id="main" class="home">
+	<div id="home">
+		<h3><a href="/archive.html">Posts</a></h3>
+		<ul class="posts">
+			{% for post in site.posts %}
+			<li><span class="date">{{ post.date | page.date | date: "%B %d, %Y"  }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div id="links"></div>
 </div>
-<div id="links"></div>
+<div id="footer" class="home"></div>

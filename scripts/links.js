@@ -17,7 +17,7 @@ $(document).ready(function() {
 });
 
 function output_feed_items(json) {
-  var heading = '<h3>' + json.value.title + '</h3>';
+  var heading = '<h3><a href="' + json.value.description + '">' + json.value.title + '</a></h3>';
   for (i=0;i<json.count;i++) {
     itemList += make_feed_item(json.value.items[i], i);
   }

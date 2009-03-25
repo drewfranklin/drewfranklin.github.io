@@ -2,7 +2,6 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	font-size: 16px;
 	line-height: 1.125em;
-/*	background: rgb(150, 150, 150);*/
 	color: rgb(30, 40, 30);
 	text-shadow: 0 0 0 rgb(255, 255, 255);
 }
@@ -15,9 +14,7 @@ em {
 	font-style: italic; 
 }
 
-input,
-button,
-textarea {
+input, button, textarea {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 }
 
@@ -78,14 +75,17 @@ a:hover {
 	height: 115px;
 	background-color: #9C0008;
 }
-#footer,
+
+#footer {
+	height: 300px;
+	background-color: #0E1119;
+}
 .post {
 	width: 780px;
 	margin-bottom: 2em;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
-	position: relative;
 }
 
 /* MAIN */
@@ -95,9 +95,7 @@ a:hover {
 	color: rgb(34, 34, 34);
 }
 
-#main .section h1,
-#main .section h2,
-#main .section h3 {
+#main .section h1, #main .section h2, #main .section h3 {
 	color: rgb(53, 62, 53);
 }
 
@@ -264,49 +262,10 @@ a:hover {
     margin: 1em 1em 1em -180px;
 }
 
-.post input[type=text], .post textarea
-{
-    font-size:inherit;
-    text-align:inherit;
-    font-family:inherit;
-	background-color:inherit;
-    color:inherit;
-    width:99.5%;
-    border:1px dotted #aaa;
-}
-
-.fieldWithErrors {
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
-
-#errorExplanation {
-  width: 400px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-}
-
-#errorExplanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  background-color: #c00;
-  color: #fff;
-}
-
-#errorExplanation p {
-  color: #333;
-  margin-bottom: 0;
-  padding: 5px;
-}
-
-#errorExplanation ul li {
-  font-size: 12px;
-  list-style: square;
+/* EXTRAS */
+#ribbon {
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	border: 0;
 }
