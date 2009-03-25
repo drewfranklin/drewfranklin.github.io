@@ -90,7 +90,7 @@ a:hover {
 
 /* MAIN */
 
-#main {
+/*#main {
 	background-color: rgb(239, 237, 238);
 	color: rgb(34, 34, 34);
 }
@@ -100,16 +100,16 @@ a:hover {
 }
 
 #main a {
-	color: #9C0008 /* rgb(122, 0, 0)*/
+	color: #9C0008
 }
 
 #main a:hover {
 	color: rgb(75, 34, 34)
-}
+}*/
 
 /* SECTIONS */
 
-.section {
+/*.section {
 	overflow: hidden;
 }
 
@@ -136,10 +136,10 @@ a:hover {
 	letter-spacing: -0.05em;
 	color: rgb(255, 255, 255);
 }
-
+*/
 /* POST HEADER */
 
-.post .admin {
+/*.post .admin {
 	float: left;
     position: absolute;
 	margin: 145px 0px;
@@ -160,11 +160,11 @@ a:hover {
 	position: absolute;
     font-size: 0.80em;
     color: rgb(109, 116, 109);
-}
+}*/
 
 /* POST TEXT */
 
-.post .post-text {
+/*.post .post-text {
     float: left;
     clear: none;
     width: 516px;
@@ -260,7 +260,7 @@ a:hover {
     float: left;
     position: relative;
     margin: 1em 1em 1em -180px;
-}
+}*/
 
 /* EXTRAS */
 #ribbon {

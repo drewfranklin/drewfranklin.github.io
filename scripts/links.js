@@ -19,13 +19,13 @@ $(document).ready(function() {
 function output_feed_items(json) {
   var heading = '<h3><a href="' + json.value.description + '">' + json.value.title + '</a></h3>';
   for (i=0;i<json.count;i++) {
-    itemList += make_feed_item(json.value.items[i], i);
+    itemList += make_feed_item(json.value.items[i]);
   }
   return heading + itemList;
 }
 
-function make_feed_item(item, item_id) {
-	return '<span>' + item.pubDate  + '</span>' +
+function make_feed_item(item) {
+	return '<span class="date">' + item.pubDate  + '</span>' +
 		'<h4><a href="' + item.link + '">' + item.title + '</a></h4>' + 
 		'<div class="item-info">' + item.description + '</div>';
 }
