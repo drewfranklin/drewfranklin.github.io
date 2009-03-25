@@ -261,11 +261,3 @@ a:hover {
     position: relative;
     margin: 1em 1em 1em -180px;
 }*/
-
-/* EXTRAS */
-#ribbon {
-	position: absolute; 
-	top: 0; 
-	right: 0; 
-	border: 0;
-}
