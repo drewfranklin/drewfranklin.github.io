@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Armchair CEO or Where I would take the AppleTV and Mac Mini
+title: Armchair CEO Vol. 1
+sub-title: or Where I would take the AppleTV and Mac Mini
 ---
 
 Armchair CEO is a series of posts that take my zero years of experience in making a product, and use to show that I know what's best for whatever I feel like blabbering on about at the time. Its self indulgent, but fun as shit.

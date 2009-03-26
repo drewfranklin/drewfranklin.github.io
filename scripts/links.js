@@ -17,7 +17,7 @@ $(document).ready(function() {
 });
 
 function output_feed_items(json) {
-  var heading = '<h3><a href="' + json.value.description + '">' + json.value.title + '</a></h3>';
+  var heading = '<a href="' + json.value.description + '"><h2>' + json.value.title + '</h2></a>';
   for (i=0;i<json.count;i++) {
     itemList += make_feed_item(json.value.items[i]);
   }
@@ -25,7 +25,7 @@ function output_feed_items(json) {
 }
 
 function make_feed_item(item) {
-	return '<span class="date">' + item.pubDate  + '</span>' +
-		'<h4><a href="' + item.link + '">' + item.title + '</a></h4>' + 
-		'<div class="item-info">' + item.description + '</div>';
+	return '<div class="post link"><span class="date">' + item.pubDate  + '</span>' +
+		'<h3><a href="' + item.link + '">' + item.title + '</a></h3>' +
+		'<div class="post-text">' + item.description + '</div></div>';
 }

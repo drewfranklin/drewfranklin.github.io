@@ -20,8 +20,7 @@ input, button, textarea {
 
 /* LINKS */
 
-a {
-	text-decoration: none; 
+a, #main.home a {
 	outline: none; 
 	font-weight: bold;
 	color: rgb(30, 40, 30);
@@ -29,8 +28,8 @@ a {
 	*color: rgb(30, 40, 30);
 }
 
-a:hover {
-	color: rgba(30, 40, 30, .65);
+a:hover, #main.home a:hover {
+	color: rgba(30, 40, 30, .7);
 }
 
 /* UTILITY */
@@ -72,17 +71,16 @@ a:hover {
 }
 
 #header {
-	height: 115px;
+	height: 100px;
 	background-color: #9C0008;
 }
 
 #footer {
-	height: 300px;
-	background-color: #0E1119;
+	height: 150px;
+	background-color: #111520;
 }
-.post {
+.posts {
 	width: 780px;
-	margin-bottom: 2em;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
@@ -90,12 +88,12 @@ a:hover {
 
 /* MAIN */
 
-/*#main {
-	background-color: rgb(239, 237, 238);
+#main {
+	background-color: #EDE9EA;
 	color: rgb(34, 34, 34);
 }
 
-#main .section h1, #main .section h2, #main .section h3 {
+#main h1, #main h2, #main h3 {
 	color: rgb(53, 62, 53);
 }
 
@@ -105,70 +103,74 @@ a:hover {
 
 #main a:hover {
 	color: rgb(75, 34, 34)
-}*/
+}
+
+/* HOME */
+
+#main.home, #footer.home {
+	background-color: #9C0008;
+}
+
+#main.home h1, #main.home h2 {
+	color: #FFF;
+	font-size: 3em;
+	width: 10em;
+	margin: .5em 0em 0.5em 2.7em;
+	letter-spacing: -0.05em;
+}
+
+#main.home h1 a, #main.home h2 a {
+	text-decoration: none;
+}
+
+.post .summary {
+	width: 200px;
+	float: right;
+}
 
 /* SECTIONS */
 
-/*.section {
-	overflow: hidden;
-}
-
-.section h1 {
+.post h1 {
 	float: left;
 	clear: left;
 	font-size: 3em;
-	margin: 1em 0em 0.5em 2.7em;
+	margin: 0.5em 0em 0.5em 2.7em;
 	line-height: 1em;
 	letter-spacing: -0.05em;
 	color: rgb(255, 255, 255);
 }
 
-.section h2 {
+.post h2 {
 	font-size: 2.25em;
-	margin: 1.1666em 0 0.666em 0em;
+	margin: 0.5em 0 0.4em 3.7em;
+	line-height: 0.8em;
 	letter-spacing: -0.075em;
 	color: rgb(255, 255, 255);
 }
 
-.section h3 {
-	font-size: 1.5em;
-	margin: 1em 0 0.666em 0em;
+.post h3 {
+	font-size: 1.2em;
+	margin: .5em 0 0.3em 6.7em;
+	padding: 0.4em 0 0;
 	letter-spacing: -0.05em;
 	color: rgb(255, 255, 255);
 }
-*/
+
 /* POST HEADER */
-
-/*.post .admin {
-	float: left;
-    position: absolute;
-	margin: 145px 0px;
-}
-
-.post .admin li {
-	display: inline;
-	padding: 0.15em 0.75em 0 0;
-}
-
-.post .post-header {
+.date {
     float: left;
-}
-
-.post .post-header .date {
-    float: left;
-    margin-top: 9.5em;
-	position: absolute;
     font-size: 0.80em;
+	padding: 0.4em 0 0;
     color: rgb(109, 116, 109);
-}*/
+}
 
 /* POST TEXT */
 
-/*.post .post-text {
+.post .post-text {
     float: left;
     clear: none;
     width: 516px;
-    padding: 0 132px;
+    padding: 0 132px 10px;
 }
 
 .post .post-text p {
@@ -244,20 +246,3 @@ a:hover {
 .post .post-text .caps {
     font-size: 0.9em;
 }
-
-.post .post-text p code {
-    font-size: 0.875em;
-}
-
-.post .post-text p.note {
-    text-indent: 0;
-    margin: 1em 0;
-    padding: 0.75em 1em;
-	background-color: rgb(230, 235, 230);
-}
-
-.post .post-text .inline.flushleft {
-    float: left;
-    position: relative;
-    margin: 1em 1em 1em -180px;
-}*/
