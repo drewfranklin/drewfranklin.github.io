@@ -4,7 +4,7 @@ title: Drew Franklin
 ---
 <div id="main" class="home">
 	<div class="posts">
-		<h2><a href="/archive.html">Posts</a></h2>
+		<a href="/archive.html"><h2>Posts</h2></a>
 		{% for post in site.posts limit:5 %}
 		<span class="date">{{ post.date | page.date | date: "%B %d, %Y"  }}</span>
 		<div class="post">
