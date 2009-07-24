@@ -146,7 +146,7 @@ a:hover, #main.home a:hover {
 .post h3 {
 	font-size: 1.2em;
 	margin: .5em 0 0.3em 6.7em;
-	padding: 0.4em 0 0;
+	padding-bottom: 0.4em;
 	letter-spacing: -0.05em;
 	color: rgb(255, 255, 255);
 }
