@@ -82,6 +82,7 @@ a:hover, #main.home a:hover {
 	width: 780px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 30px;
 	overflow: hidden;
 }
 
@@ -126,10 +127,8 @@ a:hover, #main.home a:hover {
 /* SECTIONS */
 
 .post h1 {
-	float: left;
-	clear: left;
 	font-size: 3em;
-	margin: 0.5em 0em 0.5em 2.7em;
+	margin: 0.5em 0em 0.4em 2.7em;
 	line-height: 1em;
 	letter-spacing: -0.05em;
 	color: rgb(255, 255, 255);
@@ -146,12 +145,19 @@ a:hover, #main.home a:hover {
 .post h3 {
 	font-size: 1.2em;
 	margin: .5em 0 0.3em 6.7em;
-	padding-bottom: 0.4em;
+	padding-bottom: 0.1em;
 	letter-spacing: -0.05em;
 	color: rgb(255, 255, 255);
 }
 
+.post h4 {
+	float: right;
+	width: 516px;
+	padding: 0 132px 15px 15px;
+}
+
 /* POST HEADER */
+
 .date {
     float: left;
     font-size: 0.80em;
@@ -162,10 +168,9 @@ a:hover, #main.home a:hover {
 /* POST TEXT */
 
 .post .post-text {
-    float: left;
-    clear: none;
+    float: right;
     width: 516px;
-    padding: 0 132px 10px;
+    padding: 0 132px 15px;
 }
 
 .post .post-text p {
