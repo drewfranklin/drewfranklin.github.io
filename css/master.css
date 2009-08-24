@@ -2,7 +2,7 @@ body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	font-size: 16px;
 	line-height: 1.125em;
-	color: rgb(30, 40, 30);
+	color: rgb(34, 34, 34);
 }
 
 strong {
@@ -22,13 +22,14 @@ input, button, textarea {
 a, #main.home a {
 	outline: none; 
 	font-weight: bold;
-	color: rgb(30, 40, 30);
-	color: rgba(30, 40, 30, .9);
-	*color: rgb(30, 40, 30);
+	color: rgb(34, 34, 34);
+	color: rgba(34, 34, 34, .9);
+	*color: rgb(34, 34, 34);
 }
 
 a:hover, #main.home a:hover {
-	color: rgba(30, 40, 30, .7);
+	color: rgba(34, 34, 34, .7);
+	text-decoration: underline;
 }
 
 /* UTILITY */
@@ -42,7 +43,7 @@ a:hover, #main.home a:hover {
 }
 
 .quiet {
-	color: rgba(30, 40, 30, .65);
+	color: rgba(34, 34, 34, .65);
 }
 
 .link-list {
@@ -71,13 +72,21 @@ a:hover, #main.home a:hover {
 
 #header {
 	height: 100px;
-	background-color: #9C0008;
+	background-color: #A00C0C;
+}
+
+#header h2 {
+	color: #999;
 }
 
 #footer {
 	height: 150px;
-	background-color: #111520;
+	padding-top: 30px;
+	background-color: rgb(18, 22, 33);
+	text-align: center;
+	color: #999;
 }
+
 .posts {
 	width: 780px;
 	margin-left: auto;
@@ -89,34 +98,73 @@ a:hover, #main.home a:hover {
 /* MAIN */
 
 #main {
-	background-color: #EDE9EA;
+	background-color: #FFF;
 	color: rgb(34, 34, 34);
 }
 
 #main h1, #main h2, #main h3 {
-	color: rgb(53, 62, 53);
+	color: rgb(18, 22, 33);
 }
 
 #main a {
-	color: #9C0008
+	color: #A00C0C;
 }
 
 #main a:hover {
-	color: rgb(75, 34, 34)
+	color: rgb(34, 34, 34)
 }
+
+/* NAV */
+
+#nav {
+	width: 780px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	padding-left: 16em;
+	overflow: hidden;
+}
+
+#nav li {
+	display: inline;
+	margin-top: 30px;
+}
+
+#nav a:link, #nav a:visited {
+	color: #999;
+	text-decoration: none;
+	font-size: 2.5em;
+	line-height: 2em;
+	letter-spacing: -0.05em;
+	margin: 0.8em 0.8em 0.5em 0em;
+	letter-spacing: -0.05em;
+}
+
+#nav a.active:link, #nav a.active:visited, #nav a:hover {
+	border-bottom: 4px solid rgb(34, 34, 34);
+	padding-bottom: 2px;
+	color: rgb(34, 34, 34);
+}
+
 
 /* HOME */
 
 #main.home, #footer.home {
-	background-color: #9C0008;
+	background-color: #A00C0C;
 }
 
 #main.home h1, #main.home h2 {
 	color: #FFF;
+	text-decoration: none;
 	font-size: 3em;
 	width: 10em;
-	margin: .5em 0em 0.5em 2.7em;
+	margin: 0.5em 0em 0.5em 2.7em;
 	letter-spacing: -0.05em;
+}
+
+#main.home p {
+	font-family: inherit;
+	text-indent: 0;
 }
 
 .post .summary {
@@ -162,7 +210,7 @@ a:hover, #main.home a:hover {
     float: left;
     font-size: 0.80em;
 	padding: 0.4em 0 0;
-    color: rgb(109, 116, 109);
+    color: #999;
 }
 
 /* POST TEXT */
@@ -170,7 +218,7 @@ a:hover, #main.home a:hover {
 .post .post-text {
     float: right;
     width: 516px;
-    padding: 0 132px 15px;
+    padding: 0em 132px 15px;
 }
 
 .post .post-text p {
@@ -178,38 +226,6 @@ a:hover, #main.home a:hover {
     font-size: 1.125;
     line-height: 1.5em;
     text-indent: 1em;
-}
-
-.post .post-text p:first-child,
-.post .post-text .summary+p,
-.post .post-text h3+p,
-.post .post-text p.first {
-    text-indent: 0;
-}
-
-.post .post-text h3+p,
-.post .post-text p.first {
-    margin-top: 1em;
-}
-
-.post .post-text a,
-.post .post-text strong,
-.post .post-text h3 {
-    font-weight: bold;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1em;
-}
-
-.post .post-text h3 {
-    margin-left: 0;
-    font-size: 1.125em;
-    margin-top: 1.5em;
-}
-
-.post .post-text p.first strong:first-child,
-.post .post-text .summary+p strong:first-child {
-    font-size: 1.125em;
-    line-height: 1.25em;
 }
 
 .post .post-text ul,
@@ -241,8 +257,4 @@ a:hover, #main.home a:hover {
     margin-top: 0;
     padding-top: 0;
     padding-left: 0;
-}
-
-.post .post-text .caps {
-    font-size: 0.9em;
 }

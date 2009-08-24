@@ -1,4 +1,3 @@
-/* global variables */
 var descList = new Array();
 var itemList = "";
 var feed = "http://pipes.yahoo.com/pipes/pipe.run?_id=48574491c6ed476136cb3fff8be0a34d&_render=json&_callback=?"
@@ -27,5 +26,5 @@ function output_feed_items(json) {
 function make_feed_item(item) {
 	return '<div class="post link"><span class="date">' + item.pubDate  + '</span>' +
 		'<h3><a href="' + item.link + '">' + item.title + '</a></h3>' +
-		'<div class="post-text">' + item.description + '</div></div>';
+		'<div class="post-text">' + item.description.replace(/rel="nofollow" target="_blank"/g, '') + '</div></div>';
 }
