@@ -1,4 +1,4 @@
-body {
+html {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
 	font-size: 16px;
 	line-height: 1.125em;
@@ -19,15 +19,13 @@ input, button, textarea {
 
 /* LINKS */
 
-a, #main.home a {
-	outline: none; 
+a {
 	font-weight: bold;
 	color: rgb(34, 34, 34);
 	color: rgba(34, 34, 34, .9);
-	*color: rgb(34, 34, 34);
 }
 
-a:hover, #main.home a:hover {
+a:hover {
 	color: rgba(34, 34, 34, .7);
 	text-decoration: underline;
 }
@@ -75,13 +73,12 @@ a:hover, #main.home a:hover {
 	background-color: #A00C0C;
 }
 
-#header h2 {
+h2 {
 	color: #999;
 }
 
 #footer {
-	height: 150px;
-	padding-top: 30px;
+	padding: 30px 0;
 	background-color: rgb(18, 22, 33);
 	text-align: center;
 	color: #999;
@@ -89,10 +86,7 @@ a:hover, #main.home a:hover {
 
 .posts {
 	width: 780px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-	overflow: hidden;
+	margin: 0 auto 30px;
 }
 
 /* MAIN */
@@ -117,17 +111,11 @@ a:hover, #main.home a:hover {
 /* NAV */
 
 #nav {
-	width: 780px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 30px;
-	padding-left: 16em;
-	overflow: hidden;
+  text-align: center;
 }
 
 #nav li {
 	display: inline;
-	margin-top: 30px;
 }
 
 #nav a:link, #nav a:visited {
@@ -136,8 +124,7 @@ a:hover, #main.home a:hover {
 	font-size: 2.5em;
 	line-height: 2em;
 	letter-spacing: -0.05em;
-	margin: 0.8em 0.8em 0.5em 0em;
-	letter-spacing: -0.05em;
+	margin: 0.8em 0.8em 0.5em 0;
 }
 
 #nav a.active:link, #nav a.active:visited, #nav a:hover {
@@ -158,7 +145,7 @@ a:hover, #main.home a:hover {
 	text-decoration: none;
 	font-size: 3em;
 	width: 10em;
-	margin: 0.5em 0em 0.5em 2.7em;
+	margin: 0.5em 0 0.5em 2.7em;
 	letter-spacing: -0.05em;
 }
 
@@ -176,7 +163,7 @@ a:hover, #main.home a:hover {
 
 .post h1 {
 	font-size: 3em;
-	margin: 0.5em 0em 0.4em 2.7em;
+	margin: 0.5em 0 0.4em 2.7em;
 	line-height: 1em;
 	letter-spacing: -0.05em;
 	color: rgb(255, 255, 255);
@@ -207,54 +194,55 @@ a:hover, #main.home a:hover {
 /* POST HEADER */
 
 .date {
-    float: left;
-    font-size: 0.80em;
+  float: left;
+  font-size: 0.80em;
 	padding: 0.4em 0 0;
-    color: #999;
+  color: #999;
 }
 
 /* POST TEXT */
 
 .post .post-text {
-    float: right;
-    width: 516px;
-    padding: 0em 132px 15px;
+  float: right;
+  width: 516px;
+  padding: 0em 132px 15px;
 }
 
 .post .post-text p {
-    font-family: Palatino, Georgia, 'Times New Roman', serif;
-    font-size: 1.125;
-    line-height: 1.5em;
-    text-indent: 1em;
+  font-family: Palatino, Georgia, 'Times New Roman', serif;
+  font-size: 1.125;
+  line-height: 1.5em;
+  text-indent: 1em;
 }
 
 .post .post-text ul,
 .post .post-text ol {
-    margin: 1em 0;
-    font-size: 0.875em;
-    margin-left: 2.5em;
-    line-height: 1.5em;
+  margin: 1em 0;
+  font-size: 0.875em;
+  margin-left: 2.5em;
+  line-height: 1.5em;
 }
 
 .post .post-text li {
-    margin: 0.5em 0;
+  margin: 0.5em 0;
 }
 
 .post .post-text blockquote {
-    margin: 1em 0;
-    padding: 0.75em 1em;
-    font-size: 0.875em;
+  margin: 1em 0;
+  padding: 0.75em 1em;
+  font-size: 0.875em;
 }
 
 .post .post-text blockquote p:first-child {
-    margin-top: 0;
-    text-indent: 0;
+  margin-top: 0;
+  text-indent: 0;
 }
 
 .post .post-text blockquote:first-child,
 .post .post-text blockquote.first,
 .post .post-text .summary + blockquote {
-    margin-top: 0;
-    padding-top: 0;
-    padding-left: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 0;
 }
+
