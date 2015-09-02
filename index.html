@@ -8,9 +8,12 @@ class: home
 		{% for post in site.posts %}
 		<span class="date">{{ post.date | page.date | date: "%B %d, %Y"  }}</span>
 		<div class="post">
-			<div class="summary">{{ post.sub-title }}</div>
 			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-			{{ content }}
+			{% if post.show-description %}
+				{{ post.description }}
+			{{% elsif %}}
+				{{ content }}
+			{% endif %}
 		</div>
 		{% endfor %}
 	</div>
