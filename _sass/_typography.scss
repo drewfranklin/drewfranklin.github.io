@@ -122,11 +122,7 @@ h2 {
 
 /* HOME */
 
-#main.home, #footer.home {
-	background-color: #A00C0C;
-}
-
-#main.home h1, #main.home h2 {
+#main.home h1  a, #main.home h2 a {
 	color: #FFF;
 	text-decoration: none;
 	font-size: 3em;
