@@ -12,7 +12,7 @@ class: home
 			{% if post.show-description %}
 				{{ post.description }}
 			{{% elsif %}}
-				{{ content }}
+				{{ post.content }}
 			{% endif %}
 		</div>
 		{% endfor %}
