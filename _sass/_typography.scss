@@ -19,92 +19,50 @@ a:hover {
 }
 
 /* UTILITY */
-
-.clear {
-	clear: both;
-}
-
 .small {
-    font-size: 0.75em;
+  font-size: 0.75em;
 }
 
 .quiet {
 	color: rgba(34, 34, 34, .65);
 }
 
-.link-list {
-	list-style-type: none;
-}
-
-.link-list li {
-    margin-bottom: 0.25em;
-}
-
-.button-list {
-	overflow: hidden;
-}
-
-.button-list li {
-	list-style-type: none;
-	display: inline;
-}
-
 /* LAYOUT */
-
-#main {
-	overflow: hidden;
-	position: relative;
-}
-
-#header {
-	height: 100px;
-}
 
 h2 {
 	color: #999;
 }
 
-#footer {
-	padding: 30px 0;
-	text-align: center;
-	color: #999;
-}
-
-.posts {
-	width: 780px;
-	margin: 0 auto 30px;
-}
-
 /* MAIN */
 
-#main {
+main {
 	background-color: #FFF;
 	color: rgb(34, 34, 34);
 }
 
-#main h1, #main h2, #main h3 {
+main h1, main h2, main h3 {
 	color: rgb(18, 22, 33);
 }
 
-#main a {
+main a {
 	color: #A00C0C;
 }
 
-#main a:hover {
+main a:hover {
 	color: rgb(34, 34, 34)
 }
 
 /* NAV */
 
-#nav {
+header[role="banner"] nav
   text-align: center;
 }
 
-#nav li {
+header[role="banner"] nav li {
 	display: inline;
 }
 
-#nav a:link, #nav a:visited {
+header[role="banner"] nav a:link, header[role="banner"] nav a:visited {
 	color: #999;
 	text-decoration: none;
 	font-size: 2.5em;
@@ -113,18 +71,19 @@ h2 {
 	margin: 0.8em 0.8em 0.5em 0;
 }
 
-#nav a.active:link, #nav a.active:visited, #nav a:hover {
+header[role="banner"] nav a.active:link,
+header[role="banner"] nav a.active:visited,
+header[role="banner"] nav a:hover {
 	border-bottom: 4px solid rgb(34, 34, 34);
 	padding-bottom: 2px;
 	color: rgb(34, 34, 34);
 }
 
-
 /* HOME */
-#main.home {
+main.home {
 	background: #A00C0C;
 }
-#main.home h1  a, #main.home h2 a {
+main.home h1  a, main.home h2 a {
 	color: #FFF;
 	text-decoration: none;
 	font-size: 3em;
@@ -133,19 +92,19 @@ h2 {
 	letter-spacing: -0.05em;
 }
 
-#main.home p {
+main.home p {
 	font-family: inherit;
 	text-indent: 0;
 }
 
-.post .summary {
+article .content .summary {
 	width: 200px;
 	float: right;
 }
 
 /* SECTIONS */
 
-.post h1 {
+article .content h1 {
 	font-size: 3em;
 	margin: 0.5em 0 0.4em 2.7em;
 	line-height: 1em;
@@ -153,7 +112,7 @@ h2 {
 	color: rgb(255, 255, 255);
 }
 
-.post h2 {
+article .content h2 {
 	font-size: 2.25em;
 	margin: 0.5em 0 0.4em 3.7em;
 	line-height: 0.8em;
@@ -161,7 +120,7 @@ h2 {
 	color: rgb(255, 255, 255);
 }
 
-.post h3 {
+article .content h3 {
 	font-size: 1.2em;
 	margin: .5em 0 0.3em 6.7em;
 	padding-bottom: 0.1em;
@@ -169,63 +128,8 @@ h2 {
 	color: rgb(255, 255, 255);
 }
 
-.post h4 {
+article .content h4 {
 	float: right;
 	width: 516px;
 	padding: 0 132px 15px 15px;
-}
-
-/* POST HEADER */
-
-.date {
-  float: left;
-  font-size: 0.80em;
-	padding: 0.4em 0 0;
-  color: #999;
-}
-
-/* POST TEXT */
-
-.post .post-text {
-  float: right;
-  width: 516px;
-  padding: 0em 132px 15px;
-}
-
-.post .post-text p {
-  font-family: Palatino, Georgia, 'Times New Roman', serif;
-  font-size: 1.125;
-  line-height: 1.5em;
-  text-indent: 1em;
-}
-
-.post .post-text ul,
-.post .post-text ol {
-  margin: 1em 0;
-  font-size: 0.875em;
-  margin-left: 2.5em;
-  line-height: 1.5em;
-}
-
-.post .post-text li {
-  margin: 0.5em 0;
-}
-
-.post .post-text blockquote {
-  margin: 1em 0;
-  padding: 0.75em 1em;
-  font-size: 0.875em;
-}
-
-.post .post-text blockquote p:first-child {
-  margin-top: 0;
-  text-indent: 0;
-}
-
-.post .post-text blockquote:first-child,
-.post .post-text blockquote.first,
-.post .post-text .summary + blockquote {
-  margin-top: 0;
-  padding-top: 0;
-  padding-left: 0;
 }
