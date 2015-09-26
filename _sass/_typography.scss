@@ -58,11 +58,11 @@ header[role="banner"] nav {
   text-align: center;
 }
 
-header[role="banner"] nav li {
+.site-links li {
 	display: inline;
 }
 
-header[role="banner"] nav a:link, header[role="banner"] nav a:visited {
+.site-links a:link, .site-links a:visited {
 	color: #999;
 	text-decoration: none;
 	font-size: 2.5em;
@@ -71,9 +71,9 @@ header[role="banner"] nav a:link, header[role="banner"] nav a:visited {
 	margin: 0.8em 0.8em 0.5em 0;
 }
 
-header[role="banner"] nav a.active:link,
-header[role="banner"] nav a.active:visited,
-header[role="banner"] nav a:hover {
+.site-links a.active:link,
+.site-links a.active:visited,
+.site-links a:hover {
 	border-bottom: 4px solid rgb(34, 34, 34);
 	padding-bottom: 2px;
 	color: rgb(34, 34, 34);
