@@ -1,32 +1,42 @@
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ page.title }}</title>
-  <meta name="description" content="{{ page.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="/atom.xml" rel="alternate" title="Drew Franklin Geeks Out">
-  <link rel="stylesheet" href="/css/main.css">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{{ page.title }}</title>
+	<meta name="description" content="{{ page.description }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/atom.xml" rel="alternate" title="Drew Franklin Geeks Out">
+	<link rel="stylesheet" href="/css/main.css">
 
-  <script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+	<script src="/js/vendor/modernizr-2.6.2.min.js"></script>
+	<script>
+	(function(d) {
+		var config = {
+			kitId: 'qft8qdv',
+			scriptTimeout: 3000,
+			async: true
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	})(document);
+</script>
 </head>
 <body>
 	<header role="banner">
-    <nav role="navigation">
-  		<ul class="site-links">
-  			<li><a href="http://www.drewfranklin.com/">www</a></li>
-  			<li><a href="http://drewfranklin.tumblr.com/">journal</a></li>
-  			<li><a href="http://twitter.com/drewfranklin/">status</a></li>
-  		</ul>
+		<nav role="navigation">
+			<ul class="site-links">
+				<li><a href="http://www.drewfranklin.com/">www</a></li>
+				<li><a href="http://drewfranklin.tumblr.com/">journal</a></li>
+				<li><a href="http://twitter.com/drewfranklin/">status</a></li>
+			</ul>
 	</header>
-  <main role="main" class="{{ page.class }}">
-  	{{ content }}
-  </main>
-  <footeri role="contentinfo" class="site-footer">
-  	<p>All content is released under the <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/us/">Creative Commons BY-NC License</a>.</p>
-  	<p>Here are the <a href="https://instagram.com/drewfranklin/" title="Instagram">photos</a> I take, the music I <a href="http://www.last.fm/user/drewfranklin" title="Last.fm">listen</a> to, and the <a href="https://pinboard.in/u:drewf" title="Pinboard.in">links</a> I post.</p>
-  </footer>
+	<main role="main" class="{{ page.class }}">
+		{{ content }}
+	</main>
+	<footer role="contentinfo" class="site-footer">
+		<p>All content is released under the <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/us/">Creative Commons BY-NC License</a>.</p>
+		<p>Here are the <a href="https://instagram.com/drewfranklin/" title="Instagram">photos</a> I take, the music I <a href="http://www.last.fm/user/drewfranklin" title="Last.fm">listen</a> to, and the <a href="https://pinboard.in/u:drewf" title="Pinboard.in">links</a> I post.</p>
+	</footer>
 	<!--<a href="http://github.com/drewfranklin"><img style="position: absolute;top: 0;right: 0;border: 0;" src="/img/forkme_right_darkblue.png" alt="Fork me on GitHub"></a>-->
 </body>
 </html>
