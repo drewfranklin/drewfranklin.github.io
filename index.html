@@ -11,8 +11,9 @@ class: home
 				</header>
 				{% if post.show-description %}
 					{{ post.description }}
+					Hi
 				{{% elsif %}}
-					{{ content }}
+					{{ post.content }}
 				{% endif %}
 				<footer>
 					<span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
