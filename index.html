@@ -11,8 +11,7 @@ class: home
 				</header>
 				{% if post.show-description %}
 					{{ post.description }}
-				{{% elsif %}}
-					Hi
+				{{% else %}}
 					{{ post.content }}
 				{% endif %}
 				<footer>
