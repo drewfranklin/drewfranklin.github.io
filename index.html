@@ -12,10 +12,10 @@ class: home
 				{% if post.show-description %}
 					{{ post.description }}
 				{{% elsif %}}
-					{{ post.content }}
+					{{ content }}
 				{% endif %}
 				<footer>
-					<span class="date">{{ page.date | date: "%B %d, %Y" }}</span>
+					<span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
 				</footer>
 			</div>
 		</article>
