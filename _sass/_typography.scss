@@ -1,9 +1,24 @@
+$font-serif: "freight-text-pro-1","freight-text-pro-2", Georgia, "Times New Roman", serif;
+$font-sans: "franklin-gothic-urw-cond-1","franklin-gothic-urw-cond-2",sans-serif;
+$primary-color: rgb(34, 34, 34);
+$secondary-color: #e8f7f0;
+$accent-color: #2a4036;
+
 html {
-	font-family: "freight-text-pro-1","freight-text-pro-2", Georgia, "Times New Roman", serif;
+	font-family: $font-serif;
 	font-size: 100%;
 	line-height: 1.125em;
 	color: rgb(34, 34, 34);
-	background-color: #A00C0C;
+	background: #e8f7f0; /* Old browsers */
+}
+body {
+	background: #e8f7f0; /* Old browsers #c1d1ca */
+	background: -moz-linear-gradient(-20deg, #bcc4c1 0%, #e8f7f0 40%, #e8f7f0 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#bcc4c1), color-stop(40%,#e8f7f0), color-stop(100%,#e8f7f0));
+	background: -webkit-linear-gradient(-20deg, #bcc4c1 0%,#e8f7f0 40%,#e8f7f0 100%);
+	background: -o-linear-gradient(-20deg, #bcc4c1 0%,#e8f7f0 40%,#e8f7f0 100%);
+	background: -ms-linear-gradient(-20deg, #bcc4c1 0%,#e8f7f0 40%,#e8f7f0 100%);
+	background: linear-gradient(160deg, #bcc4c1 0%,#e8f7f0 40%,#e8f7f0 100%);
 }
 
 /* LINKS */
@@ -35,11 +50,6 @@ h2 {
 
 /* MAIN */
 
-main {
-	background-color: #FFF;
-	color: rgb(34, 34, 34);
-}
-
 main h1, main h2, main h3 {
 	color: rgb(18, 22, 33);
 }
@@ -57,7 +67,19 @@ main a:hover {
 header[role="banner"] nav {
   text-align: center;
 }
-
+.wordmark {
+	background: $accent-color;
+	color: $secondary-color;
+	font-family: $font-sans;
+	display: block;
+	float: left;
+	padding: 0 27px;
+	text-decoration: none;
+}
+.site-links {
+	margin: 0;
+	padding: 0;
+}
 .site-links li {
 	display: inline;
 }
@@ -80,18 +102,6 @@ header[role="banner"] nav {
 }
 
 /* HOME */
-main.home {
-	background: #A00C0C;
-}
-main.home h1  a, main.home h2 a {
-	color: #FFF;
-	text-decoration: none;
-	font-size: 3em;
-	width: 10em;
-	margin: 0.5em 0 0.5em 2.7em;
-	letter-spacing: -0.05em;
-}
-
 main.home p {
 	font-family: inherit;
 	text-indent: 0;
@@ -119,6 +129,21 @@ article .content h2 {
 	letter-spacing: -0.075em;
 	color: rgb(255, 255, 255);
 }
+
+article .content h3 {
+	font-size: 1.2em;
+	margin: .5em 0 0.3em 6.7em;
+	padding-bottom: 0.1em;
+	letter-spacing: -0.05em;
+	color: rgb(255, 255, 255);
+}
+
+article .content h4 {
+	float: right;
+	width: 516px;
+	padding: 0 132px 15px 15px;
+}
+
 
 article .content h3 {
 	font-size: 1.2em;
