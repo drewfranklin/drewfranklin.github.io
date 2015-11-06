@@ -19,7 +19,7 @@ html {
 }
 body {
 	background: #fff;
-	background: rgba(255,255,255,.9);
+	background: rgba(255,255,255,.7);
 	-webkit-box-shadow: 0px 0px 2px 0px #999;
 	-moz-box-shadow: 0px 0px 2px 0px #999;
 	box-shadow: 0px 0px 2px 0px #999;
@@ -184,7 +184,7 @@ header[role="banner"] nav {
 }
 .wordmark {
 	background: $accent-color;
-	color: #fff;
+	color: #f5f5f5;
 	font-family: $font-sans;
 	display: block;
 	float: left;
