@@ -23,7 +23,7 @@ body {
 	-webkit-box-shadow: 0px 0px 2px 0px #999;
 	-moz-box-shadow: 0px 0px 2px 0px #999;
 	box-shadow: 0px 0px 2px 0px #999;
-	margin: 0.5em 0;
+	margin: 0.75em 0;
 	padding-bottom: 0.5em
 }
 
@@ -65,7 +65,7 @@ article h1 a {
 	transition: all 0.25s ease;
 }
 article h1 a:hover, article h1 a:focus {
-	color: #e33b37;
+	color: $accent-color;
 }
 article p {
 	margin: 0;
@@ -76,21 +76,11 @@ article blockquote p {
 	color: #333;
 }
 article .video-large {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
 	max-width: 100%;
 	width: auto !important;
 	margin-left: 0 !important;
 }
-article .video-large iframe, article .video-large object, article .video-large embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
+
 
 @media screen and (min-width: 37.5em) {
 	article {
@@ -101,23 +91,50 @@ article .video-large iframe, article .video-large object, article .video-large e
 		padding-left: 0;
 		padding-right: 0;
 	}
-	article .content h1, article .content h2, article .content p, article .content ul, article .content ol, article .content dl, article .content figure, article .content pre, article .content embed, article .content object, article .content video, article .content form, article .content footer {
+	article .content h1,
+	article .content h2,
+	article .content p,
+	article .content ul,
+	article .content ol,
+	article .content dl,
+	article .content figure,
+	article .content pre,
+	article .content embed,
+	article .content object,
+	article .content video,
+	article .content form,
+	article .content footer {
 		width: 60%;
 		margin-left: 20%;
 	}
 	p, li {
-		font-size: 1.1875em;
+		font-size: 1.125em;
 		line-height: 1.65em;
+	}
+	.wordmark {
+		padding: 0 27px 5px;
 	}
 }
 @media screen and (min-width: 50em) {
 	body {
-		margin: 1.5em;
+		margin: 0.75em 1.5em 1.5em;
 	}
 	article {
 		padding: 3em 0 4em 0;
 	}
-	article .content h1, article .content h2, article .content p, article .content ul, article .content ol, article .content dl, article .content figure, article .content pre, article .content embed, article .content object, article .content video, article .content form, article .content footer {
+	article .content h1,
+	article .content h2,
+	article .content p,
+	article .content ul,
+	article .content ol,
+	article .content dl,
+	article .content figure,
+	article .content pre,
+	article .content embed,
+	article .content object,
+	article .content video,
+	article .content form,
+	article .content footer {
 		width: 49.375%;
 		margin-left: 28.125%;
 	}
@@ -125,7 +142,7 @@ article .video-large iframe, article .video-large object, article .video-large e
 		margin-top: 1.2em;
 	}
 	p, li {
-		font-size: 1.3125em;
+		font-size: 1.1875em;
 	}
 }
 @media screen and (min-width: 56.25em) {
@@ -135,7 +152,7 @@ article .video-large iframe, article .video-large object, article .video-large e
 }
 @media screen and (min-width: 75em) {
 	p, li {
-		font-size: 1.25em;
+		font-size: 1.3125em;
 	}
 }
 /* UTILITY */
@@ -172,6 +189,29 @@ article p+p {
 article p+ul, article p+ol, article p+dl {
 	margin: 1em 0 0.4em 0;
 }
+.embed-responsive {
+	position: relative;
+	display: block;
+	height: 0;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+}
+.embed-responsive-4by3 {
+	padding-bottom: 75%;
+}
+.embed-responsive .embed-responsive-item,
+.embed-responsive embed,
+.embed-responsive iframe,
+.embed-responsive object,
+.embed-responsive video {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
 
 /* NAV */
 header[role="banner"] {
@@ -188,7 +228,7 @@ header[role="banner"] nav {
 	font-family: $font-sans;
 	display: block;
 	float: left;
-	padding: 0 27px 5px;
+	padding: 0 24px 5px;
 	text-decoration: none;
 }
 .site-links {
