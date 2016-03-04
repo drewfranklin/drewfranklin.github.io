@@ -9,7 +9,7 @@ css:
 ---
 Drew Franklin
 -------------
-<p class="text-center">2619 State St Apt R2 Santa Barbara, CA 93105<br>
+<p class="text-center"><span class="p-street-address">2619 State St Apt R2</span> <span class="p-locality">Santa Barbara, CA 93105</span><br>
 937 935-5283 (cell)<br>
 drew@drewfranklin.com<br></p>
 
