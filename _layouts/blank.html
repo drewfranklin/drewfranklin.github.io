@@ -1,0 +1,24 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{{ page.title }}</title>
+	<meta name="description" content="{{ page.description }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/atom.xml" rel="alternate" title="Drew Franklin">
+	{{ page.css }}
+</head>
+<body>
+	{% if page.include-header %}
+	{% include header.html %}
+	{% endif %}
+	<main role="main" class="{{ page.class }}">
+		{{ content }}
+	</main>
+	{% if include-footer %}
+	{% include footer.html %}
+	{% endif %}
+	{{ page.js}}
+</body>
+</html>

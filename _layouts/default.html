@@ -6,7 +6,7 @@
 	<title>{{ page.title }}</title>
 	<meta name="description" content="{{ page.description }}">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/atom.xml" rel="alternate" title="Drew Franklin Geeks Out">
+	<link href="/atom.xml" rel="alternate" title="Drew Franklin">
 	<link rel="stylesheet" href="/css/main.css?v=1.0">
 
 	<script src="/js/vendor/modernizr-2.6.2.min.js"></script>
@@ -22,24 +22,10 @@
 </script>
 </head>
 <body>
-	<header role="banner">
-		<a href="/" class="wordmark">
-			<h1>Franklin</h1>
-		</a>
-		<nav role="navigation">
-			<ul class="site-links">
-				<li><a href="http://drewfranklin.tumblr.com">journal</a></li>
-				<li><a href="http://twitter.com/drewfranklin">status</a></li>
-			</ul>
-		</nav>
-	</header>
+	{% include header.html %}
 	<main role="main" class="{{ page.class }}">
 		{{ content }}
 	</main>
-	<footer role="contentinfo" class="site-footer">
-		<p>All content is released under the <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/us/">Creative Commons BY-NC License</a>.</p>
-		<p>Here are the <a href="https://instagram.com/drewfranklin/" title="Instagram">photos</a> I take, the music I <a href="http://www.last.fm/user/drewfranklin" title="Last.fm">listen</a> to, and the <a href="https://pinboard.in/u:drewf" title="Pinboard.in">links</a> I post.</p>
-	</footer>
-	<!--<a href="http://github.com/drewfranklin"><img style="position: absolute;top: 0;right: 0;border: 0;" src="/img/forkme_right_darkblue.png" alt="Fork me on GitHub"></a>-->
+	{% include footer.html %}
 </body>
 </html>
